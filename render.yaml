@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: admin-service
+    env: node
+    rootDir: cybernaut_test/adminserver/backend
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: chat-service
+    env: node
+    rootDir: cybernaut_test/chatserver
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: login-service
+    env: node
+    rootDir: cybernaut_test/loginserver/backend
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: student-service
+    env: node
+    rootDir: cybernaut_test/studentserver/backend
+    buildCommand: npm install
+    startCommand: npm start
+
+  - type: web
+    name: superadmin-service
+    env: node
+    rootDir: cybernaut_test/superadmin/backend
+    buildCommand: npm install
+    startCommand: npm start
